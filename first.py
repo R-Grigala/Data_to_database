@@ -64,6 +64,12 @@ for x in temp_lines_total:
 for x in lines_total:
     print(x)
 
+for x in temp_lines_data:
+    test_list = x.split(',')
+    #if len(test_list) == 23:
+    if "*" in test_list[0]:
+        print(len(test_list),test_list)
+
 # lines_data = []
 
 # temp_list = []
