@@ -1,0 +1,2 @@
+eq_time, station, p_wave_type, p_wave_time, p_wave_axes_time, p_wave_axes_type, s_wave_type, s_wave_time, s_wave_axes_time, s_wave_axes_type
+1978-01-02, ste, ip, 1978-01-02 06:40:58.8, t0.3, z0.1, is, 1978-01-02 06:41:04.8, t0.8, e1.2
