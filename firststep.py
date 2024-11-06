@@ -2,12 +2,12 @@ import re
 
 # რეგულარული გამონაკლებით
 date_pattern = re.compile(r'(\d{2}\.\d{2}\.\d{2})')  # თარიღი: 01.07.92
-summary_pattern = re.compile(r'O:\s*(\d{2} \d{2} \d{2}\.\d{1,2})\s*(\w+)\s*(\d+\.\d+)\s*(\w+)')  # O: სტრიქონი
+summary_pattern = re.compile(r'(\d{2} \d{2} \d{2}) O:(\d{2} \d{2} \d{2}\.\d{1,2})\s+([\w\s\(\)\-]+)')  # O: სტრიქონი
 location_pattern = re.compile(r'F=(\d{2} \d{2}=\d{2}\.\d{2}N)\s+L=(\d{2} \d{2}=\d{2}\.\d{2}E)')  # F, L სტრიქონი
 details_pattern = re.compile(r'kl\s+(\w)\s+h=(\d+-\d+)\s+K=(\d+\.\d+)\s+Mpv=(\d+\.\d+)')  # kl სტრიქონი
 
 # შესამოწმებელი ფაილის მისამართი
-file_path = '199207'  # შეცვალეთ რეალური ფაილის მისამართით
+file_path = '199207_changed'
 
 # სია ეპიცენტრის მონაცემების შესანახად
 epicenters = []
@@ -44,11 +44,10 @@ for i, line in enumerate(lines):
     # O: სტრიქონის მონაცემები (Summary)
     summary_match = summary_pattern.search(line)
     if summary_match:
-        current_epicenter['Summary'] = f"O: {summary_match.group(1)} {summary_match.group(2)} {summary_match.group(3)} {summary_match.group(4)}"
+        current_epicenter['Summary'] = f"O: {summary_match.group(2)} {summary_match.group(3)}"
         current_epicenter['Date'] = summary_match.group(1)  # თარიღი, რომელიც გვხვდება O: სტრიქონში
-        current_epicenter['Time'] = summary_match.group(1)  # დრო
-        current_epicenter['Region'] = f"{summary_match.group(2)}"  # რეგიონი
-        current_epicenter['Magnitude'] = summary_match.group(3)  # მაგნიტუდა
+        current_epicenter['Time'] = summary_match.group(2)  # დრო
+        current_epicenter['Region'] = summary_match.group(3)  # რეგიონი
 
     # F და L სტრიქონის მონაცემები
     location_match = location_pattern.search(line)
