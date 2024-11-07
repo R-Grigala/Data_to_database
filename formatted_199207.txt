@@ -1,6 +1,6 @@
-Date: 01.07.92
+Date: 01 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 05 50 12.0 Stavropol eminanse(12)
 Location:
     F=44 25=44.42N L=42 50=42.83E
 Details:
@@ -152,9 +152,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 01.07.92
+Date: 01 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 12 26 12.0 Javakheti upl
 Location:
     F=41 18=41.30N L=44 25=44.42E
 Details:
@@ -263,9 +263,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 01.07.92
+Date: 01 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 12 35 33.1 Central Cauc
 Location:
     F=42 27=42.45N L=43 47=43.78E
 Details:
@@ -408,9 +408,9 @@ Stations:
         MLH: 
         Comment: 0.03
 
-Date: 02.07.92
+Date: 02 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 05 36 49.6 Javakheti upl
 Location:
     F=41 19=41.32N L=43 44=43.73E
 Details:
@@ -553,9 +553,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 02.07.92
+Date: 02 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 09 39 33.4 Javakheti upl
 Location:
     F=41 24=41.40N L=43 57=73.95E
 Details:
@@ -715,9 +715,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 02.07.92
+Date: 02 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 11 53 08.5 Javakheti upl
 Location:
     F=41 13=41.22N L=43 14=43.23E
 Details:
@@ -766,9 +766,9 @@ Location:
 Details:
     
 
-Date: 02.07.92
+Date: 02 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 20 48 49.6 Javakheti upl
 Location:
     F=41 26=41.43N L=43 54=43.90E
 Details:
@@ -962,9 +962,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 02.07.92
+Date: 02 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 22 10 57.3 Javakheti upl
 Location:
     F=41 30=41.50N L=43 50=43.83E
 Details:
@@ -1055,9 +1055,9 @@ Location:
 Details:
     
 
-Date: 04.07.92
+Date: 04 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 19 02 18.3 Javakheti upl
 Location:
     F=41 31=41.52N L=43 37=43.62E
 Details:
@@ -1106,9 +1106,9 @@ Location:
 Details:
     
 
-Date: 04.07.92
+Date: 04 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 20 01 33.3 Mtkvari depr
 Location:
     F=39 52=39.87N L=47 39=47.65E
 Details:
@@ -1242,9 +1242,9 @@ Location:
 Details:
     
 
-Date: 05.07.92
+Date: 05 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 04 34 09.6 Central Cauc
 Location:
     F=42 30=42.50N L=43 27=43.45E
 Details:
@@ -1353,9 +1353,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 05.07.92
+Date: 05 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 04 45 31.9 Central Cauc
 Location:
     F=42 39=42.65N L=43 20=43.33E
 Details:
@@ -1472,9 +1472,9 @@ Location:
 Details:
     
 
-Date: 05.07.92
+Date: 05 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 10 59 58.9 West C
 Location:
     F=43 07=43.12N L=42 09=42.15E
 Details:
@@ -1625,9 +1625,9 @@ Location:
 Details:
     
 
-Date: 05.07.92
+Date: 05 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 19 36 31.7 Turkey(16)
 Location:
     F=40 12=40.20N L=42 46=42.77E
 Details:
@@ -1728,9 +1728,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 06.07.92
+Date: 06 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 04 18 24.6 Javakheti upl
 Location:
     F=41 10=41.17N L=43 59=43.98E
 Details:
@@ -1796,9 +1796,9 @@ Location:
 Details:
     
 
-Date: 06.07.92
+Date: 06 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 05 46 14.1 Javakheti upl
 Location:
     F=41 17=71.28N L=43 58=73.97E
 Details:
@@ -1915,9 +1915,9 @@ Location:
 Details:
     
 
-Date: 06.07.92
+Date: 06 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 08 51 39.2 Central Cauc
 Location:
     F=42 23=42.38N L=43 09=43.15E
 Details:
@@ -2026,9 +2026,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 06.07.92
+Date: 06 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 11 44 32.7 Javakheti upl
 Location:
     F=41 22=41.37N L=43 58=43.97E
 Details:
@@ -2162,9 +2162,9 @@ Location:
 Details:
     
 
-Date: 06.07.92
+Date: 06 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 23 27 53.0 Central Cauc
 Location:
     F=42 30=42.50N L=43 39=43.65E
 Details:
@@ -2324,9 +2324,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 07.07.92
+Date: 07 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 04 03 08.8 Cental Cauc
 Location:
     F=42 24=42.40N L=43 45=43.75E
 Details:
@@ -2630,9 +2630,9 @@ Location:
 Details:
     
 
-Date: 07.07.92
+Date: 07 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 08 30 58.1 Central Cauc
 Location:
     F=42 28=42.47N L=43 57=43.95E
 Details:
@@ -2826,9 +2826,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 07.07.92
+Date: 07 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 13 31 46.0 Central Cauc
 Location:
     F=42 28=42.47N L=44 03=44.05E
 Details:
@@ -2937,9 +2937,9 @@ Stations:
         MLH: 
         Comment: 0.01
 
-Date: 07.07.92
+Date: 07 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 20 16 08.2 Javakheti upl
 Location:
     F=41 25=41.42N L=44 02=44.03E
 Details:
@@ -3022,9 +3022,9 @@ Location:
 Details:
     
 
-Date: 08.07.92
+Date: 08 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 01 10 09.2 Central Cauc
 Location:
     
 Details:
@@ -3277,9 +3277,9 @@ Location:
 Details:
     
 
-Date: 08.07.92
+Date: 08 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 08 22 10.3 Central Cauc
 Location:
     F=42 22=42.37N L=44 05=44.08E
 Details:
@@ -3464,9 +3464,9 @@ Location:
 Details:
     
 
-Date: 08.07.92
+Date: 08 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 10 37 43.8 Kolkheti(4)
 Location:
     F=42 14=42.23N L=42 42=42.70E
 Details:
@@ -3507,9 +3507,9 @@ Stations:
         MLH: 
         Comment: 0.01
 
-Date: 16.07.92
+Date: 08 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 17 15 32.3 Central Cauc
 Location:
     F=43 23=43.38N L=43 20=43.33E
 Details:
@@ -3941,9 +3941,9 @@ Location:
 Details:
     
 
-Date: 08.07.92
+Date: 08 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 15 13 01.4 Caspian Sea(11)
 Location:
     F=42 53=42.88N L=47 56=47.93E
 Details:
@@ -4213,9 +4213,9 @@ Location:
 Details:
     
 
-Date: 09.07.92
+Date: 09 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 02 16 44.9 Central Cauc
 Location:
     F=42 31=42.52N L=43 36=43.60E
 Details:
@@ -4256,9 +4256,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 09.07.92
+Date: 09 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 06 03 18.5 Jabvakheti upl
 Location:
     
 Details:
@@ -4316,9 +4316,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 09.07.92
+Date: 09 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 11 38 46.1 Kaspian Sea(11)
 Location:
     F=42 39=42.65N L=48 06=48.10E
 Details:
@@ -4665,9 +4665,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 09.07.92
+Date: 09 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 13 48 03.0 Mtkvari depr
 Location:
     F=41 18=41.30N L=46 27=46.45E
 Details:
@@ -4810,9 +4810,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 09.07.92
+Date: 09 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 17 51 31.3 Central Cauc
 Location:
     F=42 26=42.43N L=43 29=43.48E
 Details:
@@ -4929,9 +4929,9 @@ Location:
 Details:
     
 
-Date: 10.07.92
+Date: 10 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 21 32 33.9 Central Cauc
 Location:
     F=42 25=42.42N L=43 30=43.50E
 Details:
@@ -5346,9 +5346,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 10.07.92
+Date: 10 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 21 57 55.9 Central Cauc
 Location:
     F=42 32=42.53N L=43 35=43.58E
 Details:
@@ -5567,9 +5567,9 @@ Location:
 Details:
     
 
-Date: 11.07.92
+Date: 11 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 13 13 15.2 East Pre Cauc
 Location:
     F=43 46=43.77N L=45 01=45.02E
 Details:
@@ -5686,9 +5686,9 @@ Location:
 Details:
     
 
-Date: 11.07.92
+Date: 11 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 14 39 13.1 Central Cauc
 Location:
     F=42 24=42.40N L=43 31=43.52E
 Details:
@@ -6026,9 +6026,9 @@ Location:
 Details:
     
 
-Date: 11.07.92
+Date: 11 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 19 39 17.5 Javakheti upl
 Location:
     F=41 25=41.42N L=43 55=43.92E
 Details:
@@ -6162,9 +6162,9 @@ Location:
 Details:
     
 
-Date: 11.07.92
+Date: 11 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 21 43 48.6 Kolcheti(4)
 Location:
     F=42 20=42.33N L=42 15=42.25E
 Details:
@@ -6332,9 +6332,9 @@ Location:
 Details:
     
 
-Date: 12.07.92
+Date: 12 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 06 35 52.7 Central Cauc
 Location:
     F=43 26=42.43N L=42 56=42.93E
 Details:
@@ -6434,9 +6434,9 @@ Location:
 Details:
     
 
-Date: 12.07.92
+Date: 12 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 21 29 42.4 Central Cauc
 Location:
     F=42 24=42.40N L=43 38=43.63E
 Details:
@@ -6545,9 +6545,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 12.07.92
+Date: 12 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 21 48 29.0 Central Cauc
 Location:
     F=42 25=42.42N L=43 35=43.58E
 Details:
@@ -6647,9 +6647,9 @@ Location:
 Details:
     
 
-Date: 13.07.92
+Date: 13 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 11 33 16.0 Javakheti upl
 Location:
     F=41 06=41.10N L=43 30=43.50E
 Details:
@@ -6732,9 +6732,9 @@ Location:
 Details:
     
 
-Date: 14.07.92
+Date: 14 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 12 17 27.7 Javakheti upl
 Location:
     
 Details:
@@ -6817,9 +6817,9 @@ Location:
 Details:
     
 
-Date: 15.07.92
+Date: 15 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 00 06 44.2 Achara-Trialeti(5)
 Location:
     F=41 54=41.90N L=43 17=43.28E
 Details:
@@ -6885,9 +6885,9 @@ Location:
 Details:
     
 
-Date: 16.07.92
+Date: 16 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 12 18 51.2 Javakheti upl
 Location:
     F=41 18=41.30N L=44 26=44.43E
 Details:
@@ -6987,9 +6987,9 @@ Location:
 Details:
     
 
-Date: 16.07.92
+Date: 16 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 17 15 32.3 Central cauc
 Location:
     F=43 23=43.38N L=43 20=43.33E
 Details:
@@ -7217,9 +7217,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 16.07.92
+Date: 16 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 17 20 07.9 Central Cauc
 Location:
     F=43 26=43.43N L=43 10=43.17E
 Details:
@@ -7328,9 +7328,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 16.07.92
+Date: 16 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 12 28 13.7 Central Cauc
 Location:
     F=42 27=42.45N L=43 46=43.77E
 Details:
@@ -7456,9 +7456,9 @@ Stations:
         MLH: 
         Comment: 0.02
 
-Date: 16.07.92
+Date: 16 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 17 40 29.6 East Cauc
 Location:
     F=42 03=42.05N L=46 09=46.15E
 Details:
@@ -7549,9 +7549,9 @@ Location:
 Details:
     
 
-Date: 18.07.92
+Date: 18 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 05 24 32.0 Central Cauc
 Location:
     F=42 26=42.43N L=43 54=43.90E
 Details:
@@ -7626,9 +7626,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 19.07.92
+Date: 19 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 08 28 57.4 Iran(17)
 Location:
     F=38 50=38.83N L=44 54=44.90E
 Details:
@@ -7771,9 +7771,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 19.07.92
+Date: 19 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 10 35 05.7 Turkey(16)
 Location:
     F=40 50=40.83N L=42 39=42.65E
 Details:
@@ -7907,9 +7907,9 @@ Location:
 Details:
     
 
-Date: 19.07.92
+Date: 19 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 15 25 19.1 Javakheti upl
 Location:
     F=41 23=41.38N L=43 49=43.82E
 Details:
@@ -8035,9 +8035,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 19.07.92
+Date: 19 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 15 26 00.6 Javakheti upl
 Location:
     F=41 19=41.32N L=43 48=43.80E
 Details:
@@ -8137,9 +8137,9 @@ Location:
 Details:
     
 
-Date: 19.07.92
+Date: 19 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 20 21 31.8 Turkey(16)
 Location:
     F=41 02=41.03N L=43 21=43.35E
 Details:
@@ -8545,9 +8545,9 @@ Location:
 Details:
     
 
-Date: 20.07.92
+Date: 20 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 03 52 40.6 central Cauc
 Location:
     F=42 26=42.43N L=43 17=43.28E
 Details:
@@ -8630,9 +8630,9 @@ Location:
 Details:
     
 
-Date: 20.07.92
+Date: 20 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 18 39 48.1 Black Sea(10)
 Location:
     F=41 45=41.75N L=41 41=41.68E
 Details:
@@ -8706,9 +8706,9 @@ Location:
 Details:
     
 
-Date: 21.07.92
+Date: 21 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 06 41 24.2 Central Cauc
 Location:
     F=42 35=42.58N L=43 17=43.28E
 Details:
@@ -8808,9 +8808,9 @@ Location:
 Details:
     
 
-Date: 21.07.92
+Date: 21 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 09 17 40.8 Central Cauc
 Location:
     F=42 27=42.45N L=43 20=43.33E
 Details:
@@ -8876,9 +8876,9 @@ Location:
 Details:
     
 
-Date: 21.07.92
+Date: 21 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 21 18 31.3 Turkey(16)
 Location:
     F=40 48=40.80N L=42 47=42.78E
 Details:
@@ -8953,9 +8953,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 21.07.92
+Date: 21 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 23 13 07.6 Central Cauc
 Location:
     
 Details:
@@ -9038,9 +9038,9 @@ Location:
 Details:
     
 
-Date: 22.07.92
+Date: 22 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 18 15 11.0 East Cauc
 Location:
     F=43 08=43.13N L=45 10=45.17E
 Details:
@@ -9217,9 +9217,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 22.07.92
+Date: 22 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 19 09 03.6 Turkey(16)
 Location:
     F=39 40=39.67N L=43 37=43.62E
 Details:
@@ -9396,9 +9396,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 22.07.92
+Date: 22 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 22 35 34.3 Central Cauc
 Location:
     
 Details:
@@ -9532,9 +9532,9 @@ Location:
 Details:
     
 
-Date: 23.07.92
+Date: 23 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 09 32 08.1 Javakcheti upl
 Location:
     F=41 25=41.42N L=44 45=44.75E
 Details:
@@ -9634,9 +9634,9 @@ Location:
 Details:
     
 
-Date: 23.07.92
+Date: 23 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 19 39 58.7 Central Cauc
 Location:
     F=42 34=42.57N L=43 39=43.65E
 Details:
@@ -9796,9 +9796,9 @@ Stations:
         MLH: 
         Comment: 0.01
 
-Date: 24.07.92
+Date: 24 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 00 30 02.6 Javakheti upl
 Location:
     F=41 32=41.63N L=43 40=43.67E
 Details:
@@ -9847,9 +9847,9 @@ Location:
 Details:
     
 
-Date: 24.07.92
+Date: 24 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 03 16 30.8 Turkey(16)
 Location:
     F=41 00=41.00N L=43 24=43.40E
 Details:
@@ -9924,9 +9924,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 24.07.92
+Date: 24 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 03 53 24.9 Central Cauc
 Location:
     F=42 33=42.55N L=43 35=43.58E
 Details:
@@ -10196,9 +10196,9 @@ Location:
 Details:
     
 
-Date: 24.07.92
+Date: 24 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 08 21 17.3 Armenian upl
 Location:
     F=40 23=40.38N L=44 38=44.63E
 Details:
@@ -10298,9 +10298,9 @@ Location:
 Details:
     
 
-Date: 24.07.92
+Date: 24 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 09 04 52.5 Central Cauc
 Location:
     
 Details:
@@ -10596,9 +10596,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 24.07.92
+Date: 24 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 16 14 44.6 Central Cauc
 Location:
     F=42 25=42.42N L=43 35=43.58E
 Details:
@@ -10707,9 +10707,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 24.07.92
+Date: 24 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 22 44 46.7 Javakheti upl
 Location:
     F=41 25=41.42N L=43 59=43.98E
 Details:
@@ -10775,9 +10775,9 @@ Location:
 Details:
     
 
-Date: 25.07.92
+Date: 25 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 20 36 43.9 Javakheti upl
 Location:
     F=41 13=41.22N L=43 48=43.80E
 Details:
@@ -10860,9 +10860,9 @@ Location:
 Details:
     
 
-Date: 26.07.92
+Date: 26 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 06 52 31.0 Central Cauc
 Location:
     F=42 26=42.43N L=43 27=43.45E
 Details:
@@ -10954,9 +10954,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 26.07.92
+Date: 26 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 16 50 13.7 east Cauc
 Location:
     F=43 04=43.07N L=44 56=44.43E
 Details:
@@ -11090,9 +11090,9 @@ Location:
 Details:
     
 
-Date: 26.07.92
+Date: 26 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 22 51 35.2 Javakheti upl
 Location:
     F=41 21=41.35N L=43 51=43.85E
 Details:
@@ -11133,9 +11133,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 27.07.92
+Date: 27 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 00 02 43.1 Javakheti upl
 Location:
     F=41 22=41.37N L=43 53=43.88E
 Details:
@@ -11210,9 +11210,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 27.07.92
+Date: 27 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 01 07 12.9 East Cauc
 Location:
     F=41 33=41.55N L=48 30=48.50E
 Details:
@@ -11253,9 +11253,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 27.07.92
+Date: 27 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 01 14 21.5 Javakheti upl
 Location:
     F=41 10=41.17N L=43 51=43.85E
 Details:
@@ -11415,9 +11415,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 27.07.92
+Date: 27 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 02 38 21.2 Central Cauc
 Location:
     F=42 27=42.45N L=43 14=43.23E
 Details:
@@ -11738,9 +11738,9 @@ Location:
 Details:
     
 
-Date: 27.07.92
+Date: 27 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 08 00 58.6 Central Cauc
 Location:
     F=42 26=42.43N L=43 40=43.67E
 Details:
@@ -11916,9 +11916,9 @@ Location:
 Details:
     
 
-Date: 28.07.92
+Date: 28 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 19 44 53.1 Armenian upl
 Location:
     F=39 47=39.78N L=45 02=45.03E
 Details:
@@ -12137,9 +12137,9 @@ Location:
 Details:
     
 
-Date: 28.07.92
+Date: 28 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 02 05 57.3 Central Cauc
 Location:
     F=42 27=42.37N L=43 28=43.47E
 Details:
@@ -12214,9 +12214,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 28.07.92
+Date: 28 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 21 00 48.2 Central Cauc
 Location:
     F=42 46=42.77N L=44 33=44.55E
 Details:
@@ -12333,9 +12333,9 @@ Location:
 Details:
     
 
-Date: 29.07.92
+Date: 29 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 09 20 13.1 Javakheti upl
 Location:
     F=41 10=41.17N L=43 47=43.78E
 Details:
@@ -12401,9 +12401,9 @@ Location:
 Details:
     
 
-Date: 30.07.92
+Date: 30 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 00 55 56.4 Central Cauc
 Location:
     F=40 07=40.12N L=44 03=44.05E
 Details:
@@ -12614,9 +12614,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 30.07.92
+Date: 30 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 10 35 37.8 Turkey(16)
 Location:
     
 Details:
@@ -12708,9 +12708,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 30.07.92
+Date: 30 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 13 40 21.8 Central Cauc
 Location:
     F=42 56=42.93N L=44 38=44.63E
 Details:
@@ -12785,9 +12785,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 30.07.92
+Date: 30 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 18 16 26.8 Javakheti upl
 Location:
     F=41 22=41.37N L=43 50=43.83E
 Details:
@@ -12998,9 +12998,9 @@ Stations:
         MLH: 
         Comment: 
 
-Date: 31.07.92
+Date: 31 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 04 08 47.1 Javakheti upl
 Location:
     F=41 12=41.20N L=43 50=43.83E
 Details:
@@ -13066,9 +13066,9 @@ Location:
 Details:
     
 
-Date: 31.07.92
+Date: 31 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 07 32 24.5 Central Cauc
 Location:
     
 Details:
@@ -13211,9 +13211,9 @@ Stations:
         MLH: 
         Comment: 0.03
 
-Date: 31.07.92
+Date: 31 07 92
 Summary:
-    O: არაა ინფორმაცია
+    O: 16 07 18.1 Turkey(16)
 Location:
     F=41 00=41.00N L=43 36=43.60E
 Details:
