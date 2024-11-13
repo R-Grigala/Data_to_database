@@ -1,146 +1,131 @@
 import re
 
-# რეგულარული გამონაკლებით
-date_pattern = re.compile(r'(\d{2}\.\d{2}\.\d{2})')  # თარიღი: 01.07.92
-summary_pattern = re.compile(r'(\d{2} \d{2} \d{2}) O:(\d{2} \d{2} \d{2}\.\d{1,2})\s+([\w\s\(\)\-]+)')  # O: სტრიქონი
-location_pattern = re.compile(r'F=(\d{2} \d{2}=\d{2}\.\d{2}N)\s+L=(\d{2} \d{2}=\d{2}\.\d{2}E)')  # F, L სტრიქონი
-details_pattern = re.compile(r'kl\s+(\w)\s+h=(\d+-\d+)\s+K=(\d+\.\d+)\s+Mpv=(\d+\.\d+)')  # kl სტრიქონი
+# განვსაზღვრავთ რეგულარულ გამონაკლისებს
+date_pattern = re.compile(r'(\d{2}\.\d{2}\.\d{2})|\b(\d{2} \d{2} \d{2})\b')  # ამოწმებს თარიღს ორ ფორმატში (მაგ. 01 07 92 ან 01.07.92)
+summary_pattern = re.compile(r'O:(\d{2} \d{2} \d{2}\.\d) (.+)')  # მოძებნის "O:" ხაზებს, სადაც ნაჩვენებია დრო და რეგიონი
+location_pattern = re.compile(r'F=(\d{2} \d{2}=\d{2}\.\d{2}N)\s+L=(\d{2} \d{2}=\d{2}\.\d{2}E)')  # მოძებნის გეოგრაფიულ მონაცემებს (F და L)
+details_pattern = re.compile(r'kl\s+(\w)\s+h=(\d+-\d+)\s+K=(\d+\.\d+)\s+Mpv=(\d+\.\d+)')  # "kl" ხაზები, სადაც მოცემულია სიდიდეები
+station_pattern = re.compile(r'(?:,)?\s*(\d{2}\.\d{2}\.\d{2})?\s*,\s*([A-Z]{2,})\s*,\s*([^,]*),\s*([^,]*),\s*([^,]*),\s*([^,]*),\s*([^,]*),\s*([^,]*),\s*([^,]*),\s*([^,]*),\s*([^,]*),\s*([^,]*),\s*([^,]*),\s*([^,]*),\s*([^,]*),\s*([^,]*)')  # სადგურის მონაცემები
 
-# შესამოწმებელი ფაილის მისამართი
+# parser ფაილის სახელი
 file_path = '199207_changed'
 
-# სია ეპიცენტრის მონაცემების შესანახად
+# initializing სიები მონაცემების შესანახად
 epicenters = []
 current_epicenter = None
-last_header_date = None  # ე.ი. შევინახავთ ბოლო ჰედერის თარიღს
+last_header_date = None
 
-# გახსენით ფაილი და წაიკითხეთ თითოეული ხაზი
+# ვკითხულობთ ფაილის ხაზებს
 with open(file_path, 'r') as file:
     lines = file.readlines()
 
-# გადამუშავება თითოეული ხაზის
-for i, line in enumerate(lines):
-    line = line.strip()  # ამოღებულმა ზედმეტი სივრცეებმა რომ არ გვეშველოს
+# ვამუშავებთ თითოეულ ხაზს
+for line in lines:
+    line = line.strip()  # ათავისუფლებს ზედმეტ ადგილებს
 
-    if not line:  # თუ ხაზი ცარიელია, დავიწყებთ ახალი ეპიცენტრის მონაცემების შეგროვებას
+    # თუ ხაზი ცარიელია, იწყება ახალი ეპიცენტრი
+    if not line:
         if current_epicenter:
-            epicenters.append(current_epicenter)  # თუ არარეგულარული მონაცემები გვყავს, დავამატებთ
-        current_epicenter = {
-            'Header_Date': '',  # შეცვლილი სახელი ჰედერისთვის
-            'Epicenter_Date': '',  # ეპიცენტრის თარიღი
-            'Time': '',
-            'Region': '',
-            'Location': '',
-            'Magnitude': '',  # დაზოგვა
-            'Details': '',
-            'Summary': '',
-            'Stations': []
-        }
+            epicenters.append(current_epicenter)  # თუ არსებობს წინამორბედი ეპიცენტრი, დაამატე სიაში
+        current_epicenter = None  # ნულდება არსებული ეპიცენტრი
         continue
 
-    # თარიღი: თუ გვხვდება თარიღი, დავამატოთ
+    # თუ არ არსებობს მიმდინარე ეპიცენტრი, შექმენი ახალი
+    if not current_epicenter:
+        current_epicenter = {
+            'Header_Date': '',    # თარიღი (მთავარი)
+            'Epicenter_Date': '', # ეპიცენტრის თარიღი
+            'Time': '',           # დრო
+            'Region': '',         # რეგიონი
+            'Location': '',       # ადგილმდებარეობა
+            'Magnitude': '',      # მაგნიტუდა
+            'Details': '',        # დეტალები
+            'Summary': '',        # რეზიუმე
+            'Stations': []        # სადგურები
+        }
+
+    # მოძებნე მთავარი თარიღი (Header_Date) და Epicenter_Date
     date_match = date_pattern.search(line)
     if date_match:
-        date_value = date_match.group(1)
-        # თუ ეს არის ახალი ჰედერის თარიღი
-        if not last_header_date or date_value != last_header_date:
+        date_value = date_match.group(1) or date_match.group(2)  # აიღებს თარიღს ორივე ფორმატიდან
+        if not last_header_date or date_value != last_header_date:  # თუ ეს თარიღი განსხვავდება უკანასკნელისგან
             last_header_date = date_value
-            if not current_epicenter['Header_Date']:  # თუ ჰედერ თარიღი არ არსებობს
-                current_epicenter['Header_Date'] = date_value
-        # თუ ეს იგივე თარიღია, სადგურის წინ არ ჩავაწერთ
-        elif date_value != current_epicenter['Epicenter_Date']:
+            current_epicenter['Header_Date'] = date_value
+        if not current_epicenter['Epicenter_Date']:  # თუ Epicenter_Date არ არის დაგეგმილი, გამოიყენე მთავარი თარიღი
             current_epicenter['Epicenter_Date'] = date_value
 
-    # O: სტრიქონის მონაცემები (Summary)
+    # მოძებნა სადაც მოცემულია დრო და რეგიონი
     summary_match = summary_pattern.search(line)
     if summary_match:
-        current_epicenter['Summary'] = f"O: {summary_match.group(2)} {summary_match.group(3)}"
-        current_epicenter['Epicenter_Date'] = summary_match.group(1)  # ეპიცენტრის თარიღი
-        current_epicenter['Time'] = summary_match.group(2)  # დრო
-        current_epicenter['Region'] = summary_match.group(3)  # რეგიონი
+        current_epicenter['Summary'] = f"O: {summary_match.group(1)} {summary_match.group(2)}"
+        if not current_epicenter['Epicenter_Date']:  # თუ Epicenter_Date არ არის, შეავსე რეზიუმედან
+            current_epicenter['Epicenter_Date'] = summary_match.group(1)
+        current_epicenter['Time'] = summary_match.group(1)  # დრო
+        current_epicenter['Region'] = summary_match.group(2)  # რეგიონი
 
-    # F და L სტრიქონის მონაცემები
+    # მოძებნე ადგილმდებარეობა (F და L ხაზები)
     location_match = location_pattern.search(line)
-    details_match = details_pattern.search(line)
-    
     if location_match:
         current_epicenter['Location'] = f"F={location_match.group(1)} L={location_match.group(2)}"
-        
-    elif details_match:
+
+    # მოძებნა დეტალები (kl ხაზები)
+    details_match = details_pattern.search(line)
+    if details_match:
         current_epicenter['Details'] = f"kl {details_match.group(1)} h={details_match.group(2)} K={details_match.group(3)} Mpv={details_match.group(4)}"
-    
-    # თუ გვხვდება სადგური მონაცემები, მათ ვამატებთ
-    # აქ კი შევამოწმებთ, რომ სადგური მინიმუმ ორი დიდი ასო შეიცავს და არა თარიღის სტრიქონში
-    if line.startswith(',') and not date_pattern.match(line):  # დარწმუნდით რომ თარიღი არ იყოს
-        # ამ შემთხვევაში სწორი მონაცემების მიღება
-        station_data = line[1:].strip().split(',')
+
+    # სადგურის მონაცემების მოძებნა
+    station_match = station_pattern.search(line)
+    if station_match:
+        station_info = {
+            'D': current_epicenter['Epicenter_Date'],  # სადგურისთვის Epicenter_Date
+            'St': station_match.group(2).strip(),  # სადგურის დასახელება
+            'P_Fa': station_match.group(3).strip(),  # P_Fa
+            'P_Time': station_match.group(4).strip(),  # P_Time
+            'SFa': station_match.group(5).strip(),  # SFa
+            'S_Time': station_match.group(6).strip(),  # S_Time
+            'S-P': station_match.group(7).strip(),  # S-P
+            'Sour_T': station_match.group(8).strip(),  # Sour_T
+            'EpH': station_match.group(9).strip(),  # EpH
+            'EpR': station_match.group(10).strip(),  # EpR
+            'T_p': station_match.group(11).strip(),  # T_p
+            'T_s': station_match.group(12).strip(),  # T_s
+            'T_S': station_match.group(13).strip(),  # T_S
+            'Ns1': station_match.group(14).strip(),  # Ns1
+            'Ns2': station_match.group(15).strip(),  # Ns2
+            'Ew1': station_match.group(16).strip(),  # Ew1
+            'Ew2': station_match.group(17).strip() if len(station_match.groups()) > 17 else '',  # Ew2 (optional)
+            'Z': station_match.group(18).strip() if len(station_match.groups()) > 18 else '',  # Z (optional)
+            'K': station_match.group(19).strip() if len(station_match.groups()) > 19 else '',  # K (optional)
+            'Mpv': station_match.group(20).strip() if len(station_match.groups()) > 20 else '',  # Mpv (optional)
+            'MLH': station_match.group(21).strip() if len(station_match.groups()) > 21 else '',  # MLH (optional)
+            'Comment': station_match.group(22).strip() if len(station_match.groups()) > 22 else ''  # Comment (optional)
+        }
         
-        # პირველი სიტყვა (რომელიც უნდა იყოს სადგური) იქნება პირველი მნიშვნელობა
-        first_valid_word = station_data[0].strip()  # პირველი სიტყვა
+        # თუ D (Epicenter_Date) უკვე არის სადგურის მონაცემებში, ამოვიღოთ (არ გაიმეოროს)
+        if station_info['D'] == current_epicenter['Epicenter_Date']:
+            station_info.pop('D')  # D ამოიღე, რომ თავიდან ავიცილოთ გამეორება
+        
+        current_epicenter['Stations'].append(station_info)  # სადგური დავამატოთ ეპიცენტრის მონაცემებს
 
-        # შემოწმება, რომ სიტყვა შეიცავს მინიმუმ 2 დიდ ასოს
-        if first_valid_word and sum(1 for char in first_valid_word if char.isupper()) >= 2:
-            station_info = {
-                'St': station_data[0].strip() if len(station_data) > 0 else '',
-                'P_Fa': station_data[1].strip() if len(station_data) > 1 else '',
-                'P_Time': station_data[2].strip() if len(station_data) > 2 else '',
-                'SFa': station_data[3].strip() if len(station_data) > 3 else '',
-                'S_Time': station_data[4].strip() if len(station_data) > 4 else '',
-                'S-P': station_data[5].strip() if len(station_data) > 5 else '',
-                'Sour_T': station_data[6].strip() if len(station_data) > 6 else '',
-                'EpH': station_data[7].strip() if len(station_data) > 7 else '',
-                'EpR': station_data[8].strip() if len(station_data) > 8 else '',
-                'T_p': station_data[9].strip() if len(station_data) > 9 else '',
-                'T_s': station_data[10].strip() if len(station_data) > 10 else '',
-                'T_S': station_data[11].strip() if len(station_data) > 11 else '',
-                'Ns1': station_data[12].strip() if len(station_data) > 12 else '',
-                'Ns2': station_data[13].strip() if len(station_data) > 13 else '',
-                'Ew1': station_data[14].strip() if len(station_data) > 14 else '',
-                'Ew2': station_data[15].strip() if len(station_data) > 15 else '',
-                'Z': station_data[16].strip() if len(station_data) > 16 else '',
-                'K': station_data[17].strip() if len(station_data) > 17 else '',
-                'Mpv': station_data[18].strip() if len(station_data) > 18 else '',
-                'MLH': station_data[19].strip() if len(station_data) > 19 else '',
-                'Comment': station_data[20].strip() if len(station_data) > 20 else ''
-            }
-            current_epicenter['Stations'].append(station_info)
-
-# თუ ბოლო მონაცემი დარჩა, დაამატეთ
+# ბოლოს დავამატოთ უკანასკნელი ეპიცენტრი, თუ იგი არ არის დამატებული
 if current_epicenter:
     epicenters.append(current_epicenter)
 
-# ფორმატირებული მონაცემების შენახვა ახალ ფაილში
+# შევინახოთ დამუშავებული მონაცემები ფაილში
 output_file = 'formatted_199207.txt'
-
 with open(output_file, 'w') as file:
     for epicenter in epicenters:
-        # დაწერეთ ჰედერის თარიღი
         file.write(f"Date: {epicenter['Header_Date']}\n")
-        
-        # დაწერეთ O: სტრიქონი (Summary)
-        file.write(f"Summary:\n")
-        if epicenter['Summary']:
-            file.write(f"    {epicenter['Summary']}\n")
-        else:
-            file.write(f"    O: არაა ინფორმაცია\n")
-        
-        # დაწერეთ F და L მონაცემები
-        file.write(f"Location:\n")
-        file.write(f"    {epicenter['Location']}\n")
-        
-        # დაწერეთ kl დეტალები
-        file.write(f"Details:\n")
-        file.write(f"    {epicenter['Details']}\n")
-        
-        # დაწერეთ ყველა სადგურის მონაცემები
-        if epicenter['Stations']:
-            file.write(f"Stations:\n")
-            for station in epicenter['Stations']:
-                file.write(f"    Station: {station['St']}\n")  # Now using 'St' for station
-                for key, value in station.items():
-                    if key != 'St':  # Skip the 'St' key here
-                        file.write(f"        {key}: {value}\n")
-        
-        file.write("\n")
+        file.write(f"Summary:\n {epicenter['Summary']}\n")
+        file.write(f"Location:\n {epicenter['Location']}\n")
+        file.write(f"Details:\n {epicenter['Details']}\n")
+        file.write(f"Stations:\n")
+        for station in epicenter['Stations']:
+            file.write(f" Station: {station['St']}\n")
+            for key, value in station.items():
+                if key != 'St': 
+                    file.write(f" {key}: {value}\n")
+            file.write("\n")
 
-print(f"ფორმატირებული მონაცემები შენახულია '{output_file}'")
+
+print(f"Formatted data has been saved to '{output_file}'")
